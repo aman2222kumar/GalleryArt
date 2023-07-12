@@ -39,7 +39,9 @@ function App() {
   return (
     <div className="App">
       {loading ? (
-        <p>it is loading...</p>
+        <div className="loader_spinner">
+          <p>it is loading...</p>
+        </div>
       ) : (
         <>
           <header>
