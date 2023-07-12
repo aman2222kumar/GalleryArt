@@ -1,0 +1,108 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu_container{
+    background-color: brown;
+  
+    padding: 0.6rem;
+ .gallery_menu_title{
+    display: flex;
+    justify-content: space-between;
+    h3{
+        color: rgb(216, 216, 81);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        &:hover{
+            color: wheat;
+        }
+    }
+    img{
+        width: 2rem;
+        mix-blend-mode: color-burn;
+       
+    }
+    #trans_menu{
+        transition: all 0.5s;
+    }
+    .list_item{
+        width:0rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 1rem;
+        background-color: rgb(172, 229, 0);
+        color: white;
+        visibility: hidden;
+        
+      
+        .list_one{
+            margin-top: 1rem;
+        }
+    }
+    .list_item_one{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 1rem;
+        background-color: rgb(172, 229, 0);
+        color: white;
+        visibility: visible;
+        width: 10rem;
+        
+      
+        .list_one{
+            margin-top: 1rem;
+        }
+    }
+ }
+}
+
+#gallery_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    margin-top: 1rem;
+    .result{
+        display: grid;
+        grid-template-columns: 250px 250px 250px;
+        gap: 1rem;
+        border: 1px solid rgb(21, 14, 14);
+        box-shadow: 0 0 50px #3e3737;
+        border-radius: 5px;
+        padding: 1rem;
+       .data_container{
+        text-align: center;
+
+       
+       }
+    }
+
+    .numbers{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+        position: sticky;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: antiquewhite;
+        border-radius: 10px;
+        button{
+            padding: 0.7rem;
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+        }
+        p{
+            font-weight: bold;
+        }
+    }
+}
