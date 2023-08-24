@@ -101,4 +101,19 @@
 }
 #gallery_container .numbers p {
   font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  .result {
+    display: grid;
+    grid-template-columns: 100px;
+    gap: 1rem;
+    border: 1px solid rgb(21, 14, 14);
+    box-shadow: 0 0 50px #3e3737;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  .result .data_container {
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
